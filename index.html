@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCheck - Email Validator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/email.svg" alt="email svg">
+                <span>eCheck</span>
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Enter your email to validate</h1>
+            <form action="/submit" method="post">
+                <input placeholder="Enter your email" type="text" name="email" id="email">
+                <!-- <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                <br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <br><br>
+                <label>Gender:</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label> -->
+                <br><br>
+                <input type="submit" value="Submit" class="btn" id="submitBtn">
+            </form>
+        </div>
+        <div class="container">
+            <h2>Your Result</h2>
+            <div id="results">
+                Your result will show here!
+            </div>
+        </div>
+    </main>
+    <footer>
+        Copyright | eCheck.com | All Rights Reserved
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

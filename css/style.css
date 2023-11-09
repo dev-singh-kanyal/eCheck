@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    /* background-color: black; */
+    /*used for testing css linking*/
+
+    font-family: 'Poppins', sans-serif;
+    /*using poppins font on whole project*/
+
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 15px 15px;
+}
+
+.logo {
+    padding: 6px 0;
+}
+
+.logo>span {
+    font-size: 20px;
+}
+
+.logo>img {
+    width: 28px;
+    filter: invert(1);
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+ul li a {
+    /*desendent selector, css is applied to all the a tags*/
+    color: white;
+    text-decoration: none;
+}
+
+ul>li>a:hover {
+    /*child selector, css is applied to only direct child tags*/
+    color: rgb(155, 155, 210);
+}
+
+main {
+    min-height: 100vh;
+}
+
+.container {
+    /* background-color: azure; */
+    /*for testing container area*/
+
+    max-width: 80vw;
+    margin: auto;
+    padding: 5px 10px;
+}
+
+.container h1 {
+    padding: 12px 0;
+}
+
+input[type='text'] {
+    min-width: 25vw;
+    margin: auto;
+    font-size: 14px;
+    padding: 5px 8px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    padding: 5px 8px;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#results div::first-letter {
+    text-transform: uppercase;
+}
+
+footer {
+    display: flex;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+    /* body { */
+    /* background-color: lightblue; */
+    /* } */
+
+    .container {
+        font-size: 12px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .logo>img {
+        width: 20px;
+        filter: invert(1);
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+}
